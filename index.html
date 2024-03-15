@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Lesson Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="titles">
+            <h1 id='title'>Art Lessons</h1>
+            <p id='description'>Thank you for being interested in our art courses</p>
+        </div>
+        <form required id='survey-form'>
+        <label class="label-title" id='name-label'>Name<input class='placeholder' placeholder='Enter your name' id='name' type='text' required></input></label>
+        <label class="label-title" id='email-label'>Email<input class='placeholder' placeholder='Enter your email' type='email' required id='email'></input></label>
+        <label class="label-title" id='number-label'>Age<input class='age-placeholder' placeholder='Age' id='number' type='number' min='8' max='120'></label>
+        
+        <label class="label-title">Select your art skills level
+        <select class='dropdown' id='dropdown'><option>Begginer</option>
+            <option>Intermediate</option>
+            <option>Advance</option>
+        </select></label>
+        
+        <label class="label-title">Where would you like to take the art lessons?</label>
+        <label class="radio-input"><input type='radio' name='place-to-work-at' value='1'>In place</label>
+        <label class="radio-input"><input type='radio' name='place-to-work-at' value='2'>Virtual</label>
+        <label class="label-title">What art technique would you like to improve?</label>
+        <label ><input type='checkbox' value="1" >Oil Painting</input>
+        <label ><input value="2" type='checkbox'>Drawing</input>
+        <label ><input value="3" type='checkbox'>Watercolor</input>
+        <label ><input type='checkbox' value="4">Digital art</input>
+       
+        <label class="title-textarea label-title">Let us know why you are interested in learning or improving your art skills</label><textarea placeholder='e.g. I would like to become a better artist'></textarea>
+        <input id='submit' type='submit' value='Submit'></input>
+        </form>
+    </main>
+    
+</body>
+</html>
